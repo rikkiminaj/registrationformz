@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Senior High School Registration Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        background-image: url('neuvi.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    .logo-top {
+        width: 100px;
+        height: auto;
+    }
+    .logo-bottom {
+        width: 80px;
+        height: auto;
+    }
+    .container {
+        width: 80%;
+        max-width: 600px;
+        margin: 20px auto;
+        background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    select {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+    h2 {
+        color: #333;
+        font-family: 'Arial Black', sans-serif;
+    }
+    label {
+        color: #555;
+    }
+    .contact-info {
+        margin-top: 20px;
+        border-top: 1px solid #ccc;
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+    }
+    .contact-info p {
+        margin: 5px 0;
+        font-family: Arial, sans-serif;
+    }
+    .bold {
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+<div class="header">
+    <img class="logo-top" src="logocc-removebg-preview - Copy.png" alt="School Logo Left">
+    <h1 style="color: #333; font-family: 'Arial Black', sans-serif;">Senior High School Registration Form</h1>
+    <img class="logo-top" src="sjdmlo-removebg-preview.png" alt="School Logo Right">
+</div>
+<div class="container">
+    <h2>Welcome to Our Senior High School!</h2>
+    <p>Choose your strand:</p>
+    <ul>
+        <li>HUMSS - Humanities and Social Sciences</li>
+        <li>GAS - General Academic Strand</li>
+        <li>TVL - Technical-Vocational-Livelihood</li>
+        <li>ABM - Accountancy, Business, and Management</li>
+    </ul>
+    <form action="https://script.google.com/macros/s/AKfycbzW8a5X3RNp2Bu2W1MT8hYXTiti-WT6LJTHcGrfk5jlbn228V3huaYCtA7EEOBrjMQh_w/exec" method="post">
+        <label for="Choose Strand">choose strand:</label>
+        <label for="Choose Strand">Choose Strand:</label>
+        <select id="Choose Strand" name="Choose Strand" required>
+            <option value="HUMSS">HUMSS</option>
+            <option value="TVL">TVL</option>
+            <option value="ABM">ABM</option>
+            <option value="GAS">GAS</option>
+        </select>
+        <br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="lrn">LRN:</label>
+        <input type="text" id="lrn" name="lrn" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" required>
+
+        <label for="sex">Sex:</label>
+        <select id="sex" name="sex" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="civil_status">Civil Status:</label>
+        <input type="text" id="civil_status" name="civil_status" required>
+
+        <label for="street">Street:</label>
+        <input type="text" id="street" name="street" required>
+
+        <label for="barangay">Barangay:</label>
+        <input type="text" id="barangay" name="barangay" required>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required>
+
+        <label for="region">Region:</label>
+        <input type="text" id="region" name="region" required>
+
+        <input type="submit" value="Submit">
+    </form>
+    <div class="contact-info">
+        <p><span class="bold">For more information, contact us:</span></p>
+        <img class="logo-bottom" src="logocc-removebg-preview - Copy.png" alt="City College Logo Left">
+        <div>
+            <p><span class="bold">Facebook page:</span> <a href="https://www.facebook.com/citycollegeofsjdm">City College of San Jose del Monte</a></p>
+            <p><span class="bold">Location:</span> Barangay Minuyan Proper, San Jose del Monte, Philippines</p>
+            <p><span class="bold">Email:</span> inquiries.ccsjdm@gmail.com</p>
+            <p><span class="bold">YouTube:</span> <a href="https://www.youtube.com/@citycollegeofsanjosedelmon2619">City College of San Jose del Monte</a></p>
+            <p><span class="bold">Website:</span> <a href="http://ccsjdm.edu.ph">ccsjdm.edu.ph</a></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
